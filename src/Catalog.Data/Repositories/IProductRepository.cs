@@ -6,7 +6,7 @@ namespace Catalog.Data.Repositories
     {
         Task<IEnumerable<Product>> GetProductsAsync(CancellationToken cancellationToken = default);
 
-        Task<Product> GetProductAysnc(int id, CancellationToken cancellationToken = default);
+        Task<Product> GetProductAysnc(string id, CancellationToken cancellationToken = default);
 
         Task<IEnumerable<Product>> GetProductsByName(string name, CancellationToken cancellationToken = default);
 
@@ -16,6 +16,6 @@ namespace Catalog.Data.Repositories
 
         Task UpdateProductAsync(Product product, CancellationToken cancellationToken = default);
 
-        Task DeleteProductAsync(int id, CancellationToken cancellationToken = default);
+        Task DeleteProductAsync(string id, CancellationToken cancellationToken = default);
     }
 }

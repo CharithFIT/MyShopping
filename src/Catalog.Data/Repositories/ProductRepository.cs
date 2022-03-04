@@ -19,13 +19,13 @@ namespace Catalog.Data.Repositories
                 .InsertOneAsync(product, new InsertOneOptions { BypassDocumentValidation = false }, cancellationToken);
         }
 
-        public async Task DeleteProductAsync(int id, CancellationToken cancellationToken = default)
+        public async Task DeleteProductAsync(string id, CancellationToken cancellationToken = default)
         {
             await this.catalogContext.Products
-                .DeleteOneAsync(x => x.Id == id, cancellationToken);
+                .DeleteOneAsync(x => string.Equals(x.Id, id, StringComparison.InvariantCulture), cancellationToken);
         }
 
-        public async Task<Product> GetProductAysnc(int id, CancellationToken cancellationToken = default)
+        public async Task<Product> GetProductAysnc(string id, CancellationToken cancellationToken = default)
         {
             return await this.catalogContext.Products
                 .Find(p => p.Id == id).FirstOrDefaultAsync(cancellationToken);
