@@ -21,6 +21,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\Catalog.Data\Catalog.Data.csproj" />
     <ProjectReference Include="..\..\..\Catalog.Service\Catalog.Service.csproj" />
+    <ProjectReference Include="..\Catalog.Data\Catalog.Data.csproj" />
+    <ProjectReference Include="..\Catalog.Service\Catalog.Service.csproj" />
   </ItemGroup>
 
 </Project>
