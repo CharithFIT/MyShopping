@@ -9,14 +9,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{202B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{019F7E36-F5D1-49E4-9F8A-9B783BF6C467}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Service", "Catalog.Service\Catalog.Service.csproj", "{A60634B6-470B-4D51-8BF9-804A01F52CFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Service", "Catalog.Service\Catalog.Service.csproj", "{A60634B6-470B-4D51-8BF9-804A01F52CFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Data", "Catalog.Data\Catalog.Data.csproj", "{E5CE8454-88A1-4C26-B47E-CC9A95D84E5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Data", "Catalog.Data\Catalog.Data.csproj", "{E5CE8454-88A1-4C26-B47E-CC9A95D84E5C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{72F37E90-C3DF-4F1F-8192-4CB420437F68}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F0D6D73E-1C1C-4900-B2C6-B4323DCA0DA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +38,10 @@ Global
 		{E5CE8454-88A1-4C26-B47E-CC9A95D84E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5CE8454-88A1-4C26-B47E-CC9A95D84E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5CE8454-88A1-4C26-B47E-CC9A95D84E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0D6D73E-1C1C-4900-B2C6-B4323DCA0DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D6D73E-1C1C-4900-B2C6-B4323DCA0DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D6D73E-1C1C-4900-B2C6-B4323DCA0DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0D6D73E-1C1C-4900-B2C6-B4323DCA0DA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
